@@ -1,45 +1,84 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-  
-  <title>NEXORA AI
-INTELLIGENCE. AUTOMATION. EXECUTION.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="style.css">
+  <meta name="theme-color" content="#101827">
+  <meta name="application-name" content="NEXORA AI">
+
+  <meta name="description"
+        content="NEXORA AI — Intelligent AI workforce, multi-model integration and automation platform.">
+
+  <meta property="og:site_name" content="NEXORA AI">
+  <meta property="og:title" content="NEXORA AI">
+  <meta property="og:description"
+        content="Intelligence. Automation. Execution.">
+
+  <title>NEXORA AI | Intelligence. Automation. Execution.</title>
+
+  <!-- Website structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "NEXORA AI",
+    "alternateName": "NEXORA",
+    "description": "Multi-AI Agent Management Platform"
+  }
+  </script>
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="./style.css">
+
 </head>
 
 <body>
 
+  <!-- HEADER -->
   <header class="topbar">
+
     <div class="brand">
+
       <span class="brand-icon">AI</span>
+
       <div>
         <h1>NEXORA AI</h1>
         <p>Intelligent Workforce Platform</p>
       </div>
+
     </div>
+
     <span class="status" id="backendStatus">
       Checking server...
     </span>
+
   </header>
 
+  <!-- MAIN CONTENT -->
   <main class="container">
 
+    <!-- WELCOME -->
     <section class="welcome">
-      <span class="eyebrow">AI MANAGEMENT SYSTEM</span>
+
+      <span class="eyebrow">
+        AI MANAGEMENT SYSTEM
+      </span>
+
       <h2>Manage Your AI Workforce</h2>
+
       <p>
         Connect multiple AI providers and manage
         intelligent employees from one dashboard.
       </p>
+
     </section>
 
+    <!-- AI PROVIDERS -->
     <section class="provider-section">
+
       <h2>AI Providers</h2>
 
       <div class="provider-grid">
@@ -63,55 +102,84 @@ INTELLIGENCE. AUTOMATION. EXECUTION.</title>
         </article>
 
       </div>
+
     </section>
 
+    <!-- AI EMPLOYEES -->
     <section class="employee-section">
+
       <h2>AI Employees</h2>
 
       <div class="employee-card">
+
         <div>
           <h3>01 — Lead Hunter</h3>
           <p>AI-powered business research assistant</p>
         </div>
+
         <span class="employee-label">Prototype</span>
+
       </div>
 
       <div class="employee-card">
+
         <div>
           <h3>02 — Research Agent</h3>
           <p>Research and information organization</p>
         </div>
+
         <span class="employee-label">Planned</span>
+
       </div>
 
       <div class="employee-card">
+
         <div>
           <h3>03 — Sales Assistant</h3>
           <p>Customer enquiry assistance</p>
         </div>
+
         <span class="employee-label">Planned</span>
+
       </div>
+
     </section>
 
+    <!-- AI PLAYGROUND -->
     <section class="chat-section">
 
       <div class="section-heading">
+
         <div>
           <h2>AI Playground</h2>
           <p>Test your connected AI providers.</p>
         </div>
+
         <span class="live-dot">● Ready</span>
+
       </div>
 
-      <label for="provider">Choose AI provider</label>
+      <label for="provider">
+        Choose AI provider
+      </label>
 
       <select id="provider">
+
         <option value="openai">OpenAI</option>
-        <option value="gemini">Google Gemini</option>
-        <option value="claude">Anthropic Claude</option>
+
+        <option value="gemini">
+          Google Gemini
+        </option>
+
+        <option value="claude">
+          Anthropic Claude
+        </option>
+
       </select>
 
-      <label for="message">Your message</label>
+      <label for="message">
+        Your message
+      </label>
 
       <textarea
         id="message"
@@ -119,25 +187,33 @@ INTELLIGENCE. AUTOMATION. EXECUTION.</title>
         placeholder="Ask your AI assistant something..."
       ></textarea>
 
-      <button id="sendButton">
+      <button id="sendButton" type="button">
         Send to AI
       </button>
 
       <div class="response-area">
+
         <h3>AI Response</h3>
+
         <pre id="response">Your response will appear here.</pre>
+
       </div>
 
     </section>
 
-    <footer>
-      <p>MY AI AGENCY · The Web Development Studios</p>
-      <p>Multi-AI Management Platform</p>
-    </footer>
-
   </main>
 
-  <script src="js/app.js" defer></script>
+  <!-- FOOTER -->
+  <footer>
+
+    <p>NEXORA AI · The Web Development Studios</p>
+
+    <p>Intelligence. Automation. Execution.</p>
+
+  </footer>
+
+  <!-- IMPORTANT: app.js is in the ROOT directory -->
+  <script src="app.js" defer></script>
 
 </body>
 </html>
