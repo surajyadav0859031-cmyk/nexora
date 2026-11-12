@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    
+<meta name="google-site-verification" content="jEHSg2O-0hVydxL-ij2JNpn2O8J-oFZDyxJAAE5HSKU" />
+    <title>NEXORA AI | Official Website</title>
+
+<meta name="application-name"
+      content="NEXORA AI">
+
+<meta property="og:site_name"
+      content="NEXORA AI">
+
+<meta property="og:title"
+      content="NEXORA AI">
+    <script type="application/ld+json">
+
+ {"@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "NEXORA AI",
+  "alternateName": "NEXORA AI",
+  "url":"https://NEXORA AI.yourrestaurant-services.workers.dev/"}
+
+  <meta name="theme-color" content="#101827">
+
+  <title>NEXORA AI
+INTELLIGENCE. AUTOMATION. EXECUTION.</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-icon">AI</span>
+      <div>
+        <h1>NEXORA AI</h1>
+        <p>Intelligent Workforce Platform</p>
+      </div>
+    </div>
+
+    <span class="status" id="backendStatus">
+      Checking server...
+    </span>
+  </header>
+
+  <main class="container">
+
+    <section class="welcome">
+      <span class="eyebrow">AI MANAGEMENT SYSTEM</span>
+      <h2>Manage Your AI Workforce</h2>
+      <p>
+        Connect multiple AI providers and manage
+        intelligent employees from one dashboard.
+      </p>
+    </section>
+
+    <section class="provider-section">
+      <h2>AI Providers</h2>
+
+      <div class="provider-grid">
+
+        <article class="provider-card">
+          <div class="provider-icon">O</div>
+          <h3>OpenAI</h3>
+          <p id="openaiStatus">Checking...</p>
+        </article>
+
+        <article class="provider-card">
+          <div class="provider-icon">G</div>
+          <h3>Gemini</h3>
+          <p id="geminiStatus">Checking...</p>
+        </article>
+
+        <article class="provider-card">
+          <div class="provider-icon">C</div>
+          <h3>Claude</h3>
+          <p id="claudeStatus">Checking...</p>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="employee-section">
+      <h2>AI Employees</h2>
+
+      <div class="employee-card">
+        <div>
+          <h3>01 — Lead Hunter</h3>
+          <p>AI-powered business research assistant</p>
+        </div>
+        <span class="employee-label">Prototype</span>
+      </div>
+
+      <div class="employee-card">
+        <div>
+          <h3>02 — Research Agent</h3>
+          <p>Research and information organization</p>
+        </div>
+        <span class="employee-label">Planned</span>
+      </div>
+
+      <div class="employee-card">
+        <div>
+          <h3>03 — Sales Assistant</h3>
+          <p>Customer enquiry assistance</p>
+        </div>
+        <span class="employee-label">Planned</span>
+      </div>
+    </section>
+
+    <section class="chat-section">
+
+      <div class="section-heading">
+        <div>
+          <h2>AI Playground</h2>
+          <p>Test your connected AI providers.</p>
+        </div>
+        <span class="live-dot">● Ready</span>
+      </div>
+
+      <label for="provider">Choose AI provider</label>
+
+      <select id="provider">
+        <option value="openai">OpenAI</option>
+        <option value="gemini">Google Gemini</option>
+        <option value="claude">Anthropic Claude</option>
+      </select>
+
+      <label for="message">Your message</label>
+
+      <textarea
+        id="message"
+        maxlength="4000"
+        placeholder="Ask your AI assistant something..."
+      ></textarea>
+
+      <button id="sendButton">
+        Send to AI
+      </button>
+
+      <div class="response-area">
+        <h3>AI Response</h3>
+        <pre id="response">Your response will appear here.</pre>
+      </div>
+
+    </section>
+
+    <footer>
+      <p>MY AI AGENCY · The Web Development Studios</p>
+      <p>Multi-AI Management Platform</p>
+    </footer>
+
+  </main>
+
+  <script src="js/app.js" defer></script>
+
+</body>
+</html>
